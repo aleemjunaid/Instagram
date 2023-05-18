@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blackBackground{
+    background-color: black;
+}
+span{
+    transition-duration: 0.5s;
+}
+span:hover{
+    background-color: rgba(255, 255, 255, 0.076);
+    cursor: pointer;
+}
+span:hover svg{
+    transform: scale(1.1);
+}
+span:hover img{
+    transform: scale(1.1);
+}
+flex-colu{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.setBorder{
+    border-right: 1px solid #262626;
+}
+.display-n{
+    display: none;
+}
+.display-b{
+    display: block;
+}
+.lg{
+    background-image: linear-gradient(210deg,#f02a3f,#d300c5,#ff0367,#df6802,#bf9704);
+}
+.lg2{
+    border: 1px solid gray;
+}
+.left{
+    position: absolute;
+    left: -80px;
+}
+.heartwhite{
+    color: white;
+}
+.heart{
+    color: red;
+    transform: scale(1.2);
+}
+#slide{
+    overflow-x: scroll;
+    cursor: pointer;
+    /* margin-left: 100px; */
+}
+#slide::-webkit-scrollbar {
+  display: none;
+}
+.bdSmall{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+}
+.Colorred{
+    color:red;
+    /* fill: red; */
+}
+.hovIcon{
+    transition-duration: 0.5s;
+}
+.hovIcon:hover{
+    color: rgb(168, 168, 168);
+}
+.borderComment{
+    margin-top: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+}
+.selectPost2{
+    color: #3b82f6;
+}
+.setOverflow{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.setOverflow::-webkit-scrollbar {
+    display: none;
+}
+#commentDiv{
+    display: block;
+}
+@media screen and (min-width:300px) and (max-width:640px) {
+    #commentDiv{
+        left: 100px;
+    }   
+}

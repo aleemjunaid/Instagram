@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div
+      id="storyOneEdit"
+      class="flex flex-col-reverse md:flex-row lg:flex-row"
+    >
+      <!-- Side Bar Start -->
+
+      <div
+        class="blackBackground w-[100%] md:w-20 lg:w-20 lg:w-72 h-20 md:h-[100vh] lg:h-[100vh] flex md:flex-col lg:flex-col setBorder fixed bottom-0 z-10"
+      >
+        <img
+          class="w-28 ml-4 pt-8 hidden lg:block cursor-pointer"
+          src="./instalogo.png"
+          alt=""
+        />
+        <img
+          class="w-12 ml-[18px] pt-8 hidden md:block lg:hidden cursor-pointer"
+          src="./inst.jpg"
+          alt=""
+        />
+        <ul
+          class="w-[100%] pt-0 md:pt-4 lg:pt-4 pl-2 lg:pr-12 text-white items-center text-[1.4em] font-light mt-0 md:mt-4 lg:mt-4 flex md:flex-col lg:flex-col"
+        >
+          <span
+            class="flex items-center rounded-full w-12 lg:w-56 h-12 ml-16 md:ml-0 lg:ml-0"
+          >
+            <svg
+              aria-label="Home"
+              class="_ab6- ml-3 lg:ml-4"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z"
+              ></path>
+            </svg>
+            <li
+              class="pl-2 font-semibold cursor-pointer ml-4 text-[0.8em] hidden lg:block"
+            >
+              Home
+            </li>
+          </span>
+          <span
+            class="flex items-center rounded-full w-12 lg:w-56 h-12 mt-4 hidden md:flex lg:flex"
+          >
+            <svg
+              aria-label="Search"
+              class="_ab6- ml-3 lg:ml-4"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="16.511"
+                x2="22"
+                y1="16.511"
+                y2="22"
+              ></line>
+            </svg>
+            <li class="pl-2 cursor-pointer ml-4 text-[0.8em] hidden lg:block">
+              Search
+            </li>
+          </span>
+          <span
+            class="flex items-center rounded-full w-12 lg:w-56 h-12 mt-0 md:mt-4 lg:mt-4 ml-16 md:ml-0 lg:ml-0"
+          >
+            <svg
+              aria-label="Explore"
+              class="_ab6- ml-3 lg:ml-4"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <polygon
+                fill="none"
+                points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></polygon>
+              <polygon
+                fill-rule="evenodd"
+                points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"
+              ></polygon>
+              <circle
+                cx="12.001"
+                cy="12.005"
+                fill="none"
+                r="10.5"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></circle>
+            </svg>
+            <li class="pl-2 cursor-pointer ml-4 text-[0.8em] hidden lg:block">
+              Explore
+            </li>
+          </span>
+          <span
+            class="flex items-center rounded-full w-12 lg:w-56 h-12 mt-0 md:mt-4 lg:mt-4 ml-16 md:ml-0 lg:ml-0"
+          >
+            <svg
+              aria-label="Reels"
+              class="_ab6- ml-3 lg:ml-4"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="2.049"
+                x2="21.95"
+                y1="7.002"
+                y2="7.002"
+              ></line>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="13.504"
+                x2="16.362"
+                y1="2.001"
+                y2="7.002"
+              ></line>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="7.207"
+                x2="10.002"
+                y1="2.11"
+                y2="7.002"
+              ></line>
+              <path
+                d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+              <path
+                d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0Z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <li class="pl-2 cursor-pointer ml-4 text-[0.8em] hidden lg:block">
+              Reels
+            </li>
+          </span>
+          <span
+            class="flex items-center rounded-full w-12 lg:w-56 h-12 mt-0 md:mt-4 lg:mt-4 ml-16 md:ml-0 lg:ml-0"
+          >
+            <svg
+              aria-label="Messenger"
+              class="x1lliihq x1n2onr6 ml-3 lg:ml-4"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <title>Messenger</title>
+              <path
+                d="M12.003 2.001a9.705 9.705 0 1 1 0 19.4 10.876 10.876 0 0 1-2.895-.384.798.798 0 0 0-.533.04l-1.984.876a.801.801 0 0 1-1.123-.708l-.054-1.78a.806.806 0 0 0-.27-.569 9.49 9.49 0 0 1-3.14-7.175 9.65 9.65 0 0 1 10-9.7Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-miterlimit="10"
+                stroke-width="1.739"
+              ></path>
+              <path
+                d="M17.79 10.132a.659.659 0 0 0-.962-.873l-2.556 2.05a.63.63 0 0 1-.758.002L11.06 9.47a1.576 1.576 0 0 0-2.277.42l-2.567 3.98a.659.659 0 0 0 .961.875l2.556-2.049a.63.63 0 0 1 .759-.002l2.452 1.84a1.576 1.576 0 0 0 2.278-.42Z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <li class="pl-2 cursor-pointer ml-4 text-[0.8em] hidden lg:block">
+              Messages
+            </li>
+          </span>
+          <span
+            class="flex items-center rounded-full w-12 lg:w-56 h-12 mt-4 hidden md:flex lg:flex"
+          >
+            <svg
+              aria-label="Notifications"
+              class="_ab6- ml-3 lg:ml-4"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"
+              ></path>
+            </svg>
+            <li class="pl-2 cursor-pointer ml-4 text-[0.8em] hidden lg:block">
+              Notification
+            </li>
+          </span>
+          <span
+            class="flex items-center rounded-full w-12 lg:w-56 h-12 mt-0 md:mt-4 lg:mt-4 ml-16 md:ml-0 lg:ml-0"
+          >
+            <svg
+              aria-label="New post"
+              class="_ab6- ml-3 lg:ml-4"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="6.545"
+                x2="17.455"
+                y1="12.001"
+                y2="12.001"
+              ></line>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="12.003"
+                x2="12.003"
+                y1="6.545"
+                y2="17.455"
+              ></line>
+            </svg>
+            <li class="pl-2 cursor-pointer ml-4 text-[0.8em] hidden lg:block">
+              Create
+            </li>
+          </span>
+          <span
+            class="flex items-center rounded-full w-12 lg:w-56 h-12 mt-0 md:mt-4 lg:mt-4 ml-16 md:ml-0 lg:ml-0"
+          >
+            <img
+              class="h-7 w-7 rounded-full ml-3 lg:ml-4"
+              src="./me.jpg"
+              alt=""
+            />
+            <li class="pl-2 cursor-pointer ml-4 text-[0.8em] hidden lg:block">
+              Profile
+            </li>
+          </span>
+          <span
+            class="flex items-center rounded-full w-12 lg:w-56 h-12 mt-28 hidden md:flex lg:flex"
+          >
+            <svg
+              aria-label="Settings"
+              class="_ab6- ml-3 lg:ml-4"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="3"
+                x2="21"
+                y1="4"
+                y2="4"
+              ></line>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              ></line>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="3"
+                x2="21"
+                y1="20"
+                y2="20"
+              ></line>
+            </svg>
+            <li class="pl-2 cursor-pointer ml-4 text-[0.8em] hidden lg:block">
+              More
+            </li>
+          </span>
+        </ul>
+      </div>
+
+      <!-- Side Bar End -->
+
+      <!-- Main Start -->
+      <div class="w-[100%] bg-[#000000] text-white">
+        <div class="flex justify-between md:hidden lg:hidden bdSmall">
+          <img class="w-32 ml-4 p-2" src="./instalogo.png" alt="" />
+          <div class="flex justify-between items-center mr-2">
+            <input
+              class="bg-[#262626] rounded-2xl w-60 h-8 pl-4 outline-none"
+              type="text"
+              placeholder="Search"
+            />
+            <svg
+              aria-label="Notifications"
+              class="_ab6- ml-3 lg:ml-4"
+              color="rgb(245, 245, 245)"
+              fill="rgb(245, 245, 245)"
+              height="24"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="w-[85%] lg:w-[75%] ml-[8%] md:ml-[15%] lg:ml-[23%] flex"
+        >
+          <!-- Main Story Section Start -->
+          <div class="w-[100%] lg:w-[60%] pt-12">
+              <div
+                id="slide"
+                class="w-[100%] md:w-[98%] lg:w-[98%] flex h-20 relative overflow-hidden"
+              >
+                <div
+                  id="storyOne"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./imran Khan (1).jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storyTwo"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[80px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./merci.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storyThree"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[160px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./orange red logo.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storyFour"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[240px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./H&M.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storyFive"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[320px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./instagram.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storySix"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[400px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./Dior.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storySeven"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[480px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./ol.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storyEight"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[560px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./lambo.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storyNine"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[640px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./chevrolet.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storyTen"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[720px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./AMICI.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storyEleven"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[800px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./PURPLR logo.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  id="storyTwelve"
+                  class="rounded-full h-16 w-16 flex justify-center items-center lg cursor-pointer absolute left-[880px]"
+                >
+                  <img
+                    class="h-[95%] w-[95%] rounded-full"
+                    src="./ferrairi.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            <!-- Main Story Section End -->
+
+            <!-- Main Posts Start -->
+<!-- <img src="" alt=""> -->
+            <div id="containerShow" class="mb-8">
+              <div id="commentDiv"></div>
+            </div>
+          </div>
+          <!-- Suggestion Section start -->
+
+          <div class="hidden lg:block w-[30%] ml-16 flex flex-col">
+            <div class="flex">
+              <img class="h-16 w-16 rounded-full mt-12" src="./me.jpg" alt="" />
+              <div class="flex flex-col">
+                <h1 class="text-white mt-16 pl-4">aleem._.junaid</h1>
+                <p class="text-[0.8em] pl-4 pt-2">👑 A L E E M 👑</p>
+              </div>
+              <p class="mt-[19%] pl-[25%] text-blue-500 text-[0.7em]">Switch</p>
+            </div>
+            <div class="">
+              <h1 class="text-[#989898] font-medium pt-3">
+                Suggestions for you
+              </h1>
+              <div class="flex">
+                <img
+                  class="h-8 w-8 rounded-full mt-4 ml-2"
+                  src="./mbappe.jpg"
+                  alt=""
+                />
+                <div class="pt-3 pl-4">
+                  <h1 class="text-white text-[0.8em] font-medium">k.mbappe</h1>
+                  <p class="text-[#989898] text-[0.9em] pt-1">
+                    Followed By leomessi,cristiano
+                  </p>
+                </div>
+                <p
+                  id="changeFollow"
+                  class="changeFollow text-blue-500 text-[0.7em] pt-3 cursor-pointer pl-6"
+                >
+                  Follow
+                </p>
+                <p
+                  id="changeFollowing"
+                  class="changeFollowing text-white text-[0.7em] pt-3 cursor-pointer display-n pl-6"
+                >
+                  Following
+                </p>
+              </div>
+              <div class="flex">
+                <img
+                  class="h-8 w-8 rounded-full mt-4 ml-2"
+                  src="./lambo.jpg"
+                  alt=""
+                />
+                <div class="pt-3 pl-4">
+                  <h1 class="text-white text-[0.8em] font-medium">
+                    lamborghini
+                  </h1>
+                  <p class="text-[#989898] text-[0.9em] pt-1">
+                    Followed By adidas,leomessi
+                  </p>
+                </div>
+                <p
+                  id="changeFollow"
+                  class="changeFollow2 text-blue-500 text-[0.7em] pt-3 pl-3 cursor-pointer pl-9"
+                >
+                  Follow
+                </p>
+                <p
+                  id="changeFollowing"
+                  class="changeFollowing2 text-white text-[0.7em] pt-3 pl-3 cursor-pointer display-n pl-9"
+                >
+                  Following
+                </p>
+              </div>
+              <div class="flex">
+                <img
+                  class="h-8 w-8 rounded-full mt-4 ml-2"
+                  src="./ferrairi.jpg"
+                  alt=""
+                />
+                <div class="pt-3 pl-4">
+                  <h1 class="text-white text-[0.8em] font-medium">ferrari</h1>
+                  <p class="text-[#989898] text-[0.9em] pt-1">
+                    Followed By leomessi,ferrariuk
+                  </p>
+                </div>
+                <p
+                  id="changeFollow"
+                  class="changeFollow3 text-blue-500 text-[0.7em] pt-3 cursor-pointer pl-6"
+                >
+                  Follow
+                </p>
+                <p
+                  id="changeFollowing"
+                  class="changeFollowing3 text-white text-[0.7em] pt-3 cursor-pointer display-n pl-6"
+                >
+                  Following
+                </p>
+              </div>
+              <div class="flex">
+                <img
+                  class="h-8 w-8 rounded-full mt-4 ml-2"
+                  src="./merci.jpg"
+                  alt=""
+                />
+                <div class="pt-3 pl-4">
+                  <h1 class="text-white text-[0.8em] font-medium">
+                    mercedesbenz
+                  </h1>
+                  <p class="text-[#989898] text-[0.9em] pt-1">
+                    Followed By cristiano,guccican
+                  </p>
+                </div>
+                <p
+                  id="changeFollow"
+                  class="changeFollow4 text-blue-500 text-[0.7em] pt-3 cursor-pointer pl-6"
+                >
+                  Follow
+                </p>
+                <p
+                  id="changeFollowing"
+                  class="changeFollowing4 text-white text-[0.7em] pt-3 cursor-pointer display-n pl-6"
+                >
+                  Following
+                </p>
+              </div>
+              <div class="flex">
+                <img
+                  class="h-8 w-8 rounded-full mt-4 ml-2"
+                  src=".//bmw.jpg"
+                  alt=""
+                />
+                <div class="pt-3 pl-4">
+                  <h1 class="text-white text-[0.8em] font-medium">bmw</h1>
+                  <p class="text-[#989898] text-[0.9em] pt-1">
+                    Followed By cristiano,guccican
+                  </p>
+                </div>
+                <p
+                  id="changeFollow"
+                  class="changeFollow5 text-blue-500 text-[0.7em] pt-3 cursor-pointer pl-6"
+                >
+                  Follow
+                </p>
+                <p
+                  id="changeFollowing"
+                  class="changeFollowing5 text-white text-[0.7em] pt-3 cursor-pointer display-n pl-6"
+                >
+                  Following
+                </p>
+              </div>
+            </div>
+            <p class="text-[#737373] text-[0.7em] pt-12">
+              About . Help . Press . API . Jobs . Privacy . Terms . Locations .
+              Language . Meta Verified English Meta Verified
+            </p>
+            <p class="text-[#737373] text-[0.7em] pt-5">
+              © 2023 INSTAGRAM FROM META
+            </p>
+          </div>
+
+          <!-- Suggestion Section End -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Story One Start -->
+    <div
+      id="story_One"
+      class="bg-[#1a1a1a] h-[100vh] w-full flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow"></div>
+        </div>
+        <div class="flex absolute">
+          <img
+            class="h-8 w-8 rounded-full mt-4 ml-4"
+            src="./imran Khan (1).jpg"
+            alt=""
+          />
+          <p class="mt-5 text-white text-[0.8em] ml-3">imrankhan.pti</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">12h</p>
+        </div>
+        <img
+          id="gif"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./giphy.gif"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to imrankhanpti..."
+          />
+          <p
+            id="sendMsg"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story One End -->
+
+    <!-- Story Two Start -->
+    <div
+      id="story_Two"
+      class="bg-[#1a1a1a] h-[100vh] w-full flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow2"></div>
+        </div>
+        <div class="flex absolute">
+          <img
+            class="h-8 w-8 rounded-full mt-4 ml-4"
+            src="./merci.jpg"
+            alt=""
+          />
+          <p class="mt-5 text-white text-[0.8em] ml-3">mercedesbenz</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">17h</p>
+        </div>
+        <img
+          id="gif2"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./mercistory.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne2"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp2"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to mercedesbenz..."
+          />
+          <p
+            id="sendMsg2"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart2"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Two End -->
+
+    <!-- Story Three Start -->
+    <div
+      id="story_Three"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow3"></div>
+        </div>
+        <div class="flex absolute">
+          <img
+            class="h-8 w-8 rounded-full mt-4 ml-4"
+            src="./orange red logo.jpg"
+            alt=""
+          />
+          <p class="mt-5 text-white text-[0.8em] ml-3">mclarenauto</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">22h</p>
+        </div>
+        <img
+          id="gif3"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./reedora.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne3"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp3"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to mclarenauto..."
+          />
+          <p
+            id="sendMsg3"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart3"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Three End -->
+
+    <!-- Story Four Start -->
+    <div
+      id="story_Four"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow4"></div>
+        </div>
+        <div class="flex absolute">
+          <img class="h-8 w-8 rounded-full mt-4 ml-4" src="./H&M.jpg" alt="" />
+          <p class="mt-5 text-white text-[0.8em] ml-3">houseofhighlights</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">2h</p>
+        </div>
+        <img
+          id="gif4"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./H&MM.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne4"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp4"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to houseofhighlights..."
+          />
+          <p
+            id="sendMsg4"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart4"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Four End -->
+
+    <!-- Story Five Start -->
+    <div
+      id="story_Five"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow5"></div>
+        </div>
+        <div class="flex absolute">
+          <img
+            class="h-8 w-8 rounded-full mt-4 ml-4"
+            src="./instagram.jpg"
+            alt=""
+          />
+          <p class="mt-5 text-white text-[0.8em] ml-3">Instagram</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">24m</p>
+        </div>
+        <img
+          id="gif5"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./Instastory.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne5"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp5"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to Instagram..."
+          />
+          <p
+            id="sendMsg5"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart5"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Five End -->
+
+    <!-- Story Six Start -->
+    <div
+      id="story_Six"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow6"></div>
+        </div>
+        <div class="flex absolute">
+          <img class="h-8 w-8 rounded-full mt-4 ml-4" src="./Dior.jpg" alt="" />
+          <p class="mt-5 text-white text-[0.8em] ml-3">dior</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">4h</p>
+        </div>
+        <img
+          id="gif6"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./Dior Story.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne6"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp6"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to dior..."
+          />
+          <p
+            id="sendMsg6"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart6"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Six End -->
+
+    <!-- Story Seven Start -->
+    <div
+      id="story_Seven"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow7"></div>
+        </div>
+        <div class="flex absolute">
+          <img class="h-8 w-8 rounded-full mt-4 ml-4" src="./ol.jpg" alt="" />
+          <p class="mt-5 text-white text-[0.8em] ml-3">lexususa</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">17h</p>
+        </div>
+        <img
+          id="gif7"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./lexmusas.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne7"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp7"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to lexususa..."
+          />
+          <p
+            id="sendMsg7"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart7"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Seven End -->
+
+    <!-- Story Eight Start -->
+    <div
+      id="story_Eight"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow8"></div>
+        </div>
+        <div class="flex absolute">
+          <img
+            class="h-8 w-8 rounded-full mt-4 ml-4"
+            src="./lambo.jpg"
+            alt=""
+          />
+          <p class="mt-5 text-white text-[0.8em] ml-3">lamborghini</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">8h</p>
+        </div>
+        <img
+          id="gif8"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./lambostory.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne8"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp8"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to lamborghini..."
+          />
+          <p
+            id="sendMsg8"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart8"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Eight End -->
+
+    <!-- Story Nine Start -->
+    <div
+      id="story_Nine"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow9"></div>
+        </div>
+        <div class="flex absolute">
+          <img
+            class="h-8 w-8 rounded-full mt-4 ml-4"
+            src="./chevrolet.jpg"
+            alt=""
+          />
+          <p class="mt-5 text-white text-[0.8em] ml-3">chevrolet</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">11h</p>
+        </div>
+        <img
+          id="gif9"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./charvostory.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne9"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp9"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to chevrolet..."
+          />
+          <p
+            id="sendMsg9"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart9"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Nine End -->
+
+    <!-- Story Ten Start -->
+    <div
+      id="story_Ten"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow10"></div>
+        </div>
+        <div class="flex absolute">
+          <img
+            class="h-8 w-8 rounded-full mt-4 ml-4"
+            src="./AMICI.jpg"
+            alt=""
+          />
+          <p class="mt-5 text-white text-[0.8em] ml-3">amiciufficiale</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">19h</p>
+        </div>
+        <img
+          id="gif10"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./amici story.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne10"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp10"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to amiciufficiale..."
+          />
+          <p
+            id="sendMsg10"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart10"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Ten End -->
+
+    <!-- Story Eleven Start -->
+    <div
+      id="story_Eleven"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow11"></div>
+        </div>
+        <div class="flex absolute">
+          <img
+            class="h-8 w-8 rounded-full mt-4 ml-4"
+            src="./PURPLR logo.jpg"
+            alt=""
+          />
+          <p class="mt-5 text-white text-[0.8em] ml-3">rollsroycecars</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">20h</p>
+        </div>
+        <img
+          id="gif11"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./rollsstory.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne11"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp11"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to rollsroycecars..."
+          />
+          <p
+            id="sendMsg11"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart11"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Eleven End -->
+
+    <!-- Story Twelve Start -->
+    <div
+      id="story_Twelve"
+      class="bg-[#1a1a1a] h-[100vh] w-full z-40 flex justify-center items-center flex-col relative hidden"
+    >
+      <div class="w-full absolute top-2">
+        <img
+          class="w-28 ml-4 pt-2 cursor-pointer"
+          src="./instalogo-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="h-[85vh] w-[43%] md:h-[90vh] lg:h-[94vh] md:w-[35%] lg:w-[27%] rounded-2xl"
+      >
+        <div class="border rounded-full h-1 w-[96%] relative top-2 left-2">
+          <div class="bg-white h-[100%] w-full" id="grow12"></div>
+        </div>
+        <div class="flex absolute">
+          <img
+            class="h-8 w-8 rounded-full mt-4 ml-4"
+            src="./ferrairi.jpg"
+            alt=""
+          />
+          <p class="mt-5 text-white text-[0.8em] ml-3">ferrari</p>
+          <p class="text-[#96aab9] text-[0.8em] mt-5 ml-3">1m</p>
+        </div>
+        <img
+          id="gif12"
+          class="bg-cover h-full w-full rounded-2xl"
+          src="./ferraristory.jpg"
+          alt=""
+        />
+        <h1
+          id="crossStoryOne12"
+          class="cursor-pointer absolute right-4 top-4 text-[1.5em] text-white font-semibold"
+        >
+          X
+        </h1>
+        <div class="flex ml-2 relative bottom-12">
+          <input
+            id="storyOneInp12"
+            class="rounded-full h-8 w-96 bg-transparent border outline-none pl-4 text-white"
+            type="text"
+            name="Messages"
+            placeholder="Reply to ferrari..."
+          />
+          <p
+            id="sendMsg12"
+            class="text-white text-[0.7em] absolute right-8 top-2 hidden cursor-pointer"
+          >
+            Send
+          </p>
+          <i
+            id="heart12"
+            class="fa-solid fa-heart heartwhite mt-1 pl-2 text-[1.2em] cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- Story Eleven End -->
+  </body>
+</html>
